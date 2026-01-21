@@ -18,6 +18,25 @@
 | StringTie | v3.0.0 |
 | Python | v3.8.20 |
 
+
+---
+
+## Analysis Workflow / 分析流程
+```mermaid
+graph TD
+    A[Raw FASTQ] --> B[fastp QC]
+    B --> C[fastpfilter.fq.gz]
+    C --> D[HISAT2 alignment]
+    D --> E[BAM files]
+    E --> F[StringTie assembly]
+    F --> G[Sample GTF]
+    G --> H[Merge all GTF]
+    H --> I[merged.gtf]
+    I --> J[StringTie re-quant]
+    J --> K[Expression Matrix]
+```
+
+
 ## Step-by-Step Pipeline / 分步流程
 Step 1: Quality Control (fastp) / 质控
 
