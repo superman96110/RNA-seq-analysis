@@ -20,7 +20,7 @@ conda install -c bioconda subread
 #vim run_fc.sh
 #!/bin/bash
 
-cat all_bam_unique.txt | xargs featureCounts -T 8 -p -s 0 \
+cat all_bam_unique.txt | xargs featureCounts -T 8 -p --countReadPairs -s 0 \
   -t exon -g gene_id \
   -a genomic.gtf \
   -o all_gene_counts.txt
