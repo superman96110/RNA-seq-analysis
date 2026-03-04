@@ -3,7 +3,7 @@
 
 #TPM: perl ./stringtie_expression_matrix.v2.pl --expression_metric=TPM --result_dirs_file=result_dirs.list --transcript_matrix_file=transcript_tpms_all_samples.tsv --gene_matrix_file=gene_tpms_all_samples.tsv
 
-#FPKM: perl ./stringtie_expression_matrix.v2.pl --expression_metric=TPM --result_dirs_file=result_dirs.list --transcript_matrix_file=transcript_tpms_all_samples.tsv --gene_matrix_file=gene_tpms_all_samples.tsv
+#FPKM: perl ./stringtie_expression_matrix.v2.pl --expression_metric=FPKM --result_dirs_file=result_dirs.list --transcript_matrix_file=transcript_tpms_all_samples.tsv --gene_matrix_file=gene_tpms_all_samples.tsv
 
 #coverage: perl ./stringtie_expression_matrix.v2.pl --expression_metric=coverage --result_dirs_file=result_dirs.list --transcript_matrix_file=transcript_coverage_all_samples.tsv --gene_matrix_file=gene_coverage_all_samples.tsv
 
